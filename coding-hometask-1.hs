@@ -38,7 +38,7 @@ extractBin (w:ws) = do
             Nothing -> False
             Just nBins' -> nBins' < nBins
         increaseBin (Just (bin, left)) = do
-            let canAdd w = solveBPEvaluation (w + sum bin : left) == Just nBins
+            let canAdd w = solveBPEvaluation (w + sum bin : delete w left) == Just nBins
             new <- find canAdd left
             return (new : bin, delete new left)
         in until foundBin increaseBin (Just ([w], ws))
