@@ -53,6 +53,9 @@ partitionWeight :: (Ord a) => [Edge a] -> Partition a -> Int
 partitionWeight edges p = length $ filter (badEdge p) edges
     where badEdge (x, _) (u, v) = Set.member u x `xor` Set.member v x
 
+-- Превращает содержимое col-файла в граф.
+-- Выбраться из IO с хрошим лицом нельзя,
+-- поэтому совсем как в ТЗ не получится.
 readCol :: String -> Graph Int
 readCol = vsFromJust . foldl applyColLine (Nothing, []) . filter (not . null) . map words . lines
     where applyColLine g ("c":_) = g
