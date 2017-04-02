@@ -1,0 +1,16 @@
+Solving instance pr152.tsp... done in 2.3333e-2 seconds with tour length 85314 using NN and in 0.733334 seconds with tour length 91235 using NI
+Solving instance d493.tsp... done in 0.266666 seconds with tour length 44128 using NN and in 22.253331 seconds with tour length 42184 using NI
+Solving instance d2103.tsp... done in 5.496666 seconds with tour length 89435 using NN and in 1791.833154 seconds with tour length 86483 using NI
+Solving instance pr107.tsp... done in 1.0e-2 seconds with tour length 51389 using NN and in 0.273333 seconds with tour length 53883 using NI
+Solving instance d657.tsp... done in 0.5 seconds with tour length 65246 using NN and in 52.236662 seconds with tour length 60306 using NI
+Solving instance d198.tsp... done in 4.0e-2 seconds with tour length 19051 using NN and in 1.55 seconds with tour length 17995 using NI
+Solving instance pr439.tsp... done in 0.206667 seconds with tour length 131991 using NN and in 15.776665 seconds with tour length 131841 using NI
+
+В большей части случаев NI работает лучше, хотя и может давать худший результат.
+Это неудевительно: результаты могут сильно измениться даже если просто изменить порядок
+вершин на обратный, такова цена простых эвристических алгоритмов.
+
+Со временем работы же всё гораздо более однозначно,
+не только кубическая сложность NI против квадратичной NN,
+но и увеличение константы в полторы сотни раз дают
+драматическую разницу во времени работы.
