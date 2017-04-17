@@ -1,0 +1,17 @@
+Instance pr152.tsp... done in 0.249999 seconds with lower bound 59243
+Instance d493.tsp... done in 3.346667 seconds with lower bound 30462
+Instance d2103.tsp... done in 73.05666 seconds with lower bound 76946
+Instance pr107.tsp... done in 0.119999 seconds with lower bound 35412
+Instance d657.tsp... done in 6.15 seconds with lower bound 44857
+Instance d198.tsp... done in 0.46 seconds with lower bound 12181
+Instance pr439.tsp... done in 2.67 seconds with lower bound 92968
+
+Итак, мы имеем следующие результаты:
+Instance	Bnd	NN	(NN-Bnd)/Bnd	NI	(NI - Bnd)/Bnd
+pr152.tsp	59243	85314	0,44		91235	0,540013166112452
+d493.tsp	30462	44128	0,45		42184	0,384807300899481
+d2103.tsp	76946	89435	0,16		86483	0,123944064668729
+pr107.tsp	35412	51389	0,45		53883	0,521602846492714
+d657.tsp	44857	65246	0,45		60306	0,344405555431705
+d198.tsp	12181	19051	0,56		17995	0,477300714227075
+pr439.tsp	92968	131991	0,42		131841	0,418133121073918
